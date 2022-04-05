@@ -8,10 +8,6 @@ int main(void)
         c.serveFile("../index.html");
     });
     
-    ws.get("/klinigimiz", [](Client& c) {
-        c.serveFile("../klinigimiz.html");
-    });
-
     ws.run();
     return 0;
 }
